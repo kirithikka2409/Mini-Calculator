@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href ="BS/css/bootstrap.min.css" rel="stylesheet">
+    <link href="BS/css/bootstrap-theme.min.css" rel="stylesheet"> 
+    <style>
+        
+        .btn-lg:hover
+        {
+            background: red;
+        }
+        
+    </style>
+  
+</head>
+<body>
+    <div class="col-lg-4 text-info">
+        Enter First Number 
+        <input type="text" class="form-control" placeholder=" " id="text1" >
+        <br>
+        Enter Second Number 
+        <input type="text" class="form-control" placeholder=" " id ="text2" >
+        <br>
+        Answer 
+        <input type="text" class="form-control" placeholder=" " id ="ans">
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <button class="btn-primary btn-lg" onclick = "add()">
+        Addition
+    </button>
+    <button class="btn-primary btn-lg" onclick = "sub()">
+        Subraction
+    </button>
+    <button class="btn-primary btn-lg" onclick = "mul()">
+        Multiplication
+    </button>
+    <button class="btn-primary btn-lg" onclick = "div()">
+        Division
+    </button>
+    <button class="btn-primary btn-lg" onclick = "div()">
+        Modulus
+    </button>
+    </div>
+    <script>
+        
+        
+        function add(){
+                var a = parseInt(document.getElementById("text1").value);
+                var b = parseInt(document.getElementById("text2").value);
+
+                var sum = a + b;
+
+                document.getElementById("ans").value = sum;  
+
+            }
+
+        function sub(){
+                var a = parseInt(document.getElementById("text1").value);
+                var b = parseInt(document.getElementById("text2").value);
+
+                var c = a - b;
+
+                document.getElementById("ans").value = c;  
+
+            }
+
+            function mul(){
+                var a = parseInt(document.getElementById("text1").value);
+                var b = parseInt(document.getElementById("text2").value);
+
+                var c = a * b;
+
+                document.getElementById("ans").value = c;  
+
+            }
+
+            function div(){
+                var a = parseInt(document.getElementById("text1").value);
+                var b = parseInt(document.getElementById("text2").value);
+
+                var c = a / b;
+
+                document.getElementById("ans").value = c;  
+
+            }
+
+            function mod(){
+                var a = parseInt(document.getElementById("text1").value);
+                var b = parseInt(document.getElementById("text2").value);
+
+                var c = a % b;
+
+                document.getElementById("ans").value = c;  
+
+            }
+        </script>
+</body>
+</html>
